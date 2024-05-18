@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/squadmlogo.png" alt="squad M logo" class="logo-img">
+                </a>
+            </div>
+            <nav id="nav-container" class="">
+                <span class="burger" id="navToggle">
+                    <img src="../images/bars-solid.svg" alt="nav burger" class="nav-burger">
+                </span>
+                <div class="search-bar nav-item">
+                    <label for="search"><img src="../images/magnifying-glass-solid.svg" alt="search icon" class="search-icon">
+                        <input required type="text" name="search" id="search" placeholder="Search..." class="search-input">
+                    </label>
+                </div>
+                <a href="../index.html" class="nav-item">Home</a> 
+                <a href="reviews.html" class="nav-item">Reviews</a>
+                <a href="aboutus.html" class="nav-item">About us</a> 
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="signup.html">
+                    <button class="nav-item">Sign Up</button>
+                </a>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Sign Up</h1>
+            <form action="../index.html" id="form">
+                <div class="group">
+                    <label for="name">User Name:</label>
+                    <input required type="text" id="name">
+                    <span id="nameError"></span>
+                </div>
+                <div class="group">
+                    <label for="age">Age:</label>
+                    <input required type="text" inputmode="numeric" id="age">
+                </div>
+                
+                <div class="group">
+                    <label for="email">Email:</label>
+                    <input required type="email" inputmode="email" id="email">
+                    <span id="emailError" ></span>
+                </div>
+                <div class="group">
+                    <label for="password">Password:</label>
+                    <input required type="password" id="password">
+                    <span id="passError" ></span>
+                </div>
+                <div class="group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input required type="password" id="confirm-password">
+                    <span id="confPassError"></span>
+                </div>
+                <button type="submit">Submit</button>
+               
+            </form>
+
+        </main>
+
+        
+
+        <footer>
+            <p>Copyright &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/form-validate.js"></script>
+</body>
+</html>
